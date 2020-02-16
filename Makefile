@@ -46,3 +46,15 @@ prune-venv:
 
 deploy: clean
 	python3 setup.py sdist
+
+# Git
+
+commit:
+	make clean
+	flake8
+	make test
+	make freeze
+	git status
+	@echo -n "Are you sure? [y/N] " && read ans && [ $${ans:-N} = y ]
+	git add .
+	git commit -a

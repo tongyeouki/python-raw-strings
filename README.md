@@ -20,7 +20,7 @@ data structures:
 
 It can handle exceptions for integers, floats and datetime objects. 
 
-# Install 
+## Install 
 
     $ python3 -m venv venv
     $ source venv/bin/activate
@@ -30,7 +30,7 @@ Or:
 
     $ python3 setup.py install
     
-# Usage
+## Usage
 
 ```python
 from raw_strings.formatter import DataFormatter
