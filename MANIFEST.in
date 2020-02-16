@@ -1,0 +1,10 @@
+recursive-include settings raw_strings
+recursive-include tests *
+recursive-include .gitlab *
+global-exclude __pycache__/*, *.pyc
+include .coveragerc
+include .gitignore
+include LICENSE.txt
+include Makefile
+include requirements.txt
+include tox.ini
